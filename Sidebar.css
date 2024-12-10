@@ -1,0 +1,160 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.logo h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sidebar.dark-mode .logo h2 {
+  color: #fff;
+}
+
+/* Search Bar */
+.search-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Features Section */
+.features {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.feature-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sidebar.dark-mode .feature-icon,
+.sidebar.dark-mode .feature span {
+  color: #fff;
+}
+
+/* Buttons */
+button {
+  width: 200px; /* Ensures buttons have the same width */
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  margin-top: 20px; /* Adds some space between buttons */
+}
+
+/* Logout Button */
+.logout button {
+  background-color: #ff3b3b;
+  color: white;
+}
+
+.logout button:hover {
+  background-color: #e70000;
+}
+
+.sidebar.dark-mode .logout button {
+  background-color: #ff6f6f;
+}
+
+.sidebar.dark-mode .logout button:hover {
+  background-color: #e00000;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle button {
+  background-color: #4c4c4c;
+}
+
+.dark-mode-toggle button:hover {
+  background-color: #333;
+}
+
+.sidebar.dark-mode .dark-mode-toggle button {
+  background-color: #222;
+}
+
+.sidebar.dark-mode .dark-mode-toggle button:hover {
+  background-color: #111;
+}
+
+/* Icons */
+.feature-icon,
+.search-icon,
+.logout-icon {
+  color: inherit;
+}
+
+.dark-mode-toggle button svg {
+  margin-right: 10px;
+}
+
+.dark-mode-toggle button {
+  color: white; /* Always make the 'Dark Mode' button text white */
+}
+
+.logout button {
+  display: flex;
+  align-items: center;
+}
+
+.logout button .logout-icon {
+  margin-right: 10px; /* Adds space between the icon and the text */
+}
